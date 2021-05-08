@@ -23,7 +23,7 @@ rdp爆破工具，基于freerdp，目前只支持mac（因为使用mac，并且�
    -d              爆破的延时 (ms) （默认为 0）
    --pass-count    每个进程一次爆破多少个密码 （默认为 100）
    --proxy         代理支持格式为 socks5://user:password@ip:port
-   --log-level     The value is 1 for all logs, otherwise only successful logs are displayed （默认为 1）
-   --delims        Separator for host, user name, and password （默认为 ,）
-   -h              Help
+   --log-level     日志显示设置，值为1表示都显示，不为1表示只显示爆破成功的结果（默认为 1）
+   --delims        --host、--user和--pass参数的分隔符 （默认为 ,）
+   -h              帮助
 ```

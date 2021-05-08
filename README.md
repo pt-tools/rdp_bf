@@ -7,5 +7,23 @@ rdp爆破工具，基于freerdp，目前只支持mac（因为使用mac，并且�
    |  \/|| | \||  \/|  | | //|  __\
    |    /| |_/||  __/  | |_\\| |
    \_/\_\\____/\_/     \____/\_/
+   
+   --host          Host address support format 192.168.0.0/24,192.168.0-255.0-255,192.168.0.1-192.168.0.255
+   -iL             Enter the host address from the file. (default ./ip.txt)
+   -p              Port
+   --user          User name support format admin,manager,user
+   --uL            Enter the user name from the file (default ./dics/username.txt).
+   --pass          Password support format password,123456
+   -pL             Enter the password from the file (default ./dics/password.txt).
+   -o              Output the blasting result to the given file name (default ./result.txt).
+   --domain        Domain
+   -t              Number of hosts blasted at the same time (default 5).
+   -c              The number of processes that explode rdp at the same time per host (default 10).
+   -r              Number of retries after blasting error (default 3).
+   -d              Delay time (ms) (default 0)
+   --pass-count    Number of passwords blasted per process (default 100).
+   --proxy         Proxy support format socks5://user:password@ip:port
+   --log-level     The value is 1 for all logs, otherwise only successful logs are displayed (default 1).
+   --delims        Separator for host, user name, and password (default ,).
+   -h              Help
 ```
-![image](https://user-images.githubusercontent.com/83851367/117525469-0cb57900-aff5-11eb-847b-24e420721a7b.png)
